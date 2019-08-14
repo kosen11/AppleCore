@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7204323023048B8E00E201F0 /* TableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204322F23048B8E00E201F0 /* TableDataProvider.swift */; };
+		720432322304C2D500E201F0 /* StringDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720432312304C2D500E201F0 /* StringDataCell.swift */; };
+		720432372304CC8200E201F0 /* UITableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720432362304CC8200E201F0 /* UITableVC.swift */; };
 		724CEE0922E8D07100650499 /* AppleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724CEDFF22E8D07100650499 /* AppleCore.framework */; };
 		724CEE0E22E8D07100650499 /* AppleCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE0D22E8D07100650499 /* AppleCoreTests.swift */; };
 		724CEE1022E8D07100650499 /* AppleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 724CEE0222E8D07100650499 /* AppleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7204322F23048B8E00E201F0 /* TableDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataProvider.swift; sourceTree = "<group>"; };
+		720432312304C2D500E201F0 /* StringDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataCell.swift; sourceTree = "<group>"; };
+		720432362304CC8200E201F0 /* UITableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableVC.swift; sourceTree = "<group>"; };
 		724CEDFF22E8D07100650499 /* AppleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CEE0222E8D07100650499 /* AppleCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleCore.h; sourceTree = "<group>"; };
 		724CEE0322E8D07100650499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +104,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720432332304C2E700E201F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				724CEE1F22E8D0E100650499 /* UIAlertActionX.swift */,
+				724CEE2322E8D0E100650499 /* UIAlertController+Show.swift */,
+				724CEE1E22E8D0E100650499 /* UIColor+Hex.swift */,
+				724CEE2122E8D0E100650499 /* UIDevice+VendorId.swift */,
+				724CEE2022E8D0E100650499 /* UIView+Anchor.swift */,
+				724CEE2222E8D0E100650499 /* UIView+Shake.swift */,
+				72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		720432342304C2F500E201F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				720432312304C2D500E201F0 /* StringDataCell.swift */,
+				7204322F23048B8E00E201F0 /* TableDataProvider.swift */,
+				720432362304CC8200E201F0 /* UITableVC.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		720432352304C30A00E201F0 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		724CEDF522E8D07100650499 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +178,6 @@
 			children = (
 				724CEE3022E8D0E100650499 /* BioMetric */,
 				724CEE1C22E8D0E100650499 /* Extensions */,
-				72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */,
 				724CEE1B22E8D0E100650499 /* DataObject.swift */,
 				724CEE1A22E8D0E100650499 /* FileStorage.swift */,
 				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
@@ -160,13 +197,9 @@
 		724CEE1D22E8D0E100650499 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				724CEE1F22E8D0E100650499 /* UIAlertActionX.swift */,
-				724CEE2322E8D0E100650499 /* UIAlertController+Show.swift */,
-				724CEE1E22E8D0E100650499 /* UIColor+Hex.swift */,
-				724CEE2122E8D0E100650499 /* UIDevice+VendorId.swift */,
-				724CEE2022E8D0E100650499 /* UIView+Anchor.swift */,
-				724CEE2222E8D0E100650499 /* UIView+Shake.swift */,
-				72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */,
+				720432352304C30A00E201F0 /* CollectionView */,
+				720432342304C2F500E201F0 /* TableView */,
+				720432332304C2E700E201F0 /* Extensions */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -306,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720432322304C2D500E201F0 /* StringDataCell.swift in Sources */,
 				724CEE3622E8D0E100650499 /* UIColor+Hex.swift in Sources */,
 				724CEE3522E8D0E100650499 /* DataObject.swift in Sources */,
 				724CEE3D22E8D0E100650499 /* NSNumberX.swift in Sources */,
@@ -317,10 +351,12 @@
 				724CEE3A22E8D0E100650499 /* UIView+Shake.swift in Sources */,
 				724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */,
 				724CEE4122E8D0E100650499 /* NSError+Simple.swift in Sources */,
+				720432372304CC8200E201F0 /* UITableVC.swift in Sources */,
 				72A2339F22FA36F900C76273 /* UIViewController+NaviBarHeight.swift in Sources */,
 				724CEE4522E8D0E100650499 /* String+Validation.swift in Sources */,
 				724CEE4822E8D0E100650499 /* BioMetricId.swift in Sources */,
 				724CEE4622E8D0E100650499 /* NSNumber+Money.swift in Sources */,
+				7204323023048B8E00E201F0 /* TableDataProvider.swift in Sources */,
 				724CEE3E22E8D0E100650499 /* NSObject+ClassName.swift in Sources */,
 				724CEE4222E8D0E100650499 /* String+Append.swift in Sources */,
 				724CEE4322E8D0E100650499 /* String+Trim.swift in Sources */,
