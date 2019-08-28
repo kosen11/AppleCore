@@ -13,7 +13,6 @@
 		724CEE0922E8D07100650499 /* AppleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724CEDFF22E8D07100650499 /* AppleCore.framework */; };
 		724CEE0E22E8D07100650499 /* AppleCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE0D22E8D07100650499 /* AppleCoreTests.swift */; };
 		724CEE1022E8D07100650499 /* AppleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 724CEE0222E8D07100650499 /* AppleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		724CEE3422E8D0E100650499 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE1A22E8D0E100650499 /* FileStorage.swift */; };
 		724CEE3522E8D0E100650499 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE1B22E8D0E100650499 /* DataObject.swift */; };
 		724CEE3622E8D0E100650499 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE1E22E8D0E100650499 /* UIColor+Hex.swift */; };
 		724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE1F22E8D0E100650499 /* UIAlertActionX.swift */; };
@@ -59,7 +58,6 @@
 		724CEE0822E8D07100650499 /* AppleCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CEE0D22E8D07100650499 /* AppleCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCoreTests.swift; sourceTree = "<group>"; };
 		724CEE0F22E8D07100650499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		724CEE1A22E8D0E100650499 /* FileStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		724CEE1B22E8D0E100650499 /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
 		724CEE1E22E8D0E100650499 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		724CEE1F22E8D0E100650499 /* UIAlertActionX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertActionX.swift; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 				724CEE3022E8D0E100650499 /* BioMetric */,
 				724CEE1C22E8D0E100650499 /* Extensions */,
 				724CEE1B22E8D0E100650499 /* DataObject.swift */,
-				724CEE1A22E8D0E100650499 /* FileStorage.swift */,
 				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
 			);
 			path = Utilities;
@@ -347,7 +344,6 @@
 				724CEE4722E8D0E100650499 /* BioMetricError.swift in Sources */,
 				724CEE4422E8D0E100650499 /* NumberFormatter+Money.swift in Sources */,
 				724CEE4022E8D0E100650499 /* DateX.swift in Sources */,
-				724CEE3422E8D0E100650499 /* FileStorage.swift in Sources */,
 				724CEE3A22E8D0E100650499 /* UIView+Shake.swift in Sources */,
 				724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */,
 				724CEE4122E8D0E100650499 /* NSError+Simple.swift in Sources */,

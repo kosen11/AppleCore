@@ -10,20 +10,26 @@ import UIKit
 
 open class UITableVC: UITableViewController {
     
+    private let CONTENT_SIZE_KEY_PATH = "contentSize"
+    
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        tableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
+        tableView.addObserver(self, forKeyPath: CONTENT_SIZE_KEY_PATH, options: .new, context: nil)
     }
     
     override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        tableView.removeObserver(self, forKeyPath: "contentSize")
+        tableView.removeObserver(self, forKeyPath: CONTENT_SIZE_KEY_PATH)
     }
     
     override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        preferredContentSize = tableView.contentSize
+        if let path = keyPath {
+            if path == CONTENT_SIZE_KEY_PATH {
+                preferredContentSize = tableView.contentSize
+            }
+        }
     }
 
     override open func numberOfSections(in tableView: UITableView) -> Int {
