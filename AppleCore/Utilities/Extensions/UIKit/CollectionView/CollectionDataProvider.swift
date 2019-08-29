@@ -38,7 +38,7 @@ public class CollectionDataProvider: NSObject, UICollectionViewDataSource {
     }
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return sectionSize
+        return Int(ceil(Double(data.count) / Double(sectionSize)))
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
