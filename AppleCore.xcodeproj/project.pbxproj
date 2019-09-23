@@ -36,6 +36,7 @@
 		724CEE4922E8D0E100650499 /* ResultCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE3322E8D0E100650499 /* ResultCallback.swift */; };
 		72A2338C22F8D6D500C76273 /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */; };
 		72A2339F22FA36F900C76273 /* UIViewController+NaviBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */; };
+		72F0F1EF2339718000DDC3DD /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		724CEE3322E8D0E100650499 /* ResultCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultCallback.swift; sourceTree = "<group>"; };
 		72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataProvider.swift; sourceTree = "<group>"; };
 		72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NaviBarHeight.swift"; sourceTree = "<group>"; };
+		72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,20 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		720432332304C2E700E201F0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				724CEE1F22E8D0E100650499 /* UIAlertActionX.swift */,
-				724CEE2322E8D0E100650499 /* UIAlertController+Show.swift */,
-				724CEE1E22E8D0E100650499 /* UIColor+Hex.swift */,
-				724CEE2122E8D0E100650499 /* UIDevice+VendorId.swift */,
-				724CEE2022E8D0E100650499 /* UIView+Anchor.swift */,
-				724CEE2222E8D0E100650499 /* UIView+Shake.swift */,
-				72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		720432342304C2F500E201F0 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */,
+				72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -155,9 +144,10 @@
 		724CEE0122E8D07100650499 /* AppleCore */ = {
 			isa = PBXGroup;
 			children = (
+				724CEE2422E8D0E100650499 /* Foundation */,
+				72F0F1F02339722100DDC3DD /* UIKit */,
 				724CEE0222E8D07100650499 /* AppleCore.h */,
 				724CEE0322E8D07100650499 /* Info.plist */,
-				724CEE1922E8D0E100650499 /* Utilities */,
 			);
 			path = AppleCore;
 			sourceTree = "<group>";
@@ -171,37 +161,7 @@
 			path = AppleCoreTests;
 			sourceTree = "<group>";
 		};
-		724CEE1922E8D0E100650499 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				724CEE3022E8D0E100650499 /* BioMetric */,
-				724CEE1C22E8D0E100650499 /* Extensions */,
-				724CEE1B22E8D0E100650499 /* DataObject.swift */,
-				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		724CEE1C22E8D0E100650499 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				724CEE1D22E8D0E100650499 /* UIKit */,
-				724CEE2422E8D0E100650499 /* Foundation */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		724CEE1D22E8D0E100650499 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				720432352304C30A00E201F0 /* CollectionView */,
-				720432342304C2F500E201F0 /* TableView */,
-				720432332304C2E700E201F0 /* Extensions */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		724CEE2422E8D0E100650499 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				724CEE2522E8D0E100650499 /* DispatchTime+Later.swift */,
@@ -216,6 +176,17 @@
 				724CEE2E22E8D0E100650499 /* String+Validation.swift */,
 				724CEE2F22E8D0E100650499 /* NSNumber+Money.swift */,
 			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		724CEE2422E8D0E100650499 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				724CEE1C22E8D0E100650499 /* Extensions */,
+				724CEE3022E8D0E100650499 /* BioMetric */,
+				724CEE1B22E8D0E100650499 /* DataObject.swift */,
+				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
+			);
 			path = Foundation;
 			sourceTree = "<group>";
 		};
@@ -226,6 +197,30 @@
 				724CEE3222E8D0E100650499 /* BioMetricId.swift */,
 			);
 			path = BioMetric;
+			sourceTree = "<group>";
+		};
+		72F0F1F02339722100DDC3DD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				72F0F1F12339728200DDC3DD /* Extensions */,
+				720432352304C30A00E201F0 /* CollectionView */,
+				720432342304C2F500E201F0 /* TableView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		72F0F1F12339728200DDC3DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				724CEE1F22E8D0E100650499 /* UIAlertActionX.swift */,
+				724CEE2322E8D0E100650499 /* UIAlertController+Show.swift */,
+				724CEE1E22E8D0E100650499 /* UIColor+Hex.swift */,
+				724CEE2122E8D0E100650499 /* UIDevice+VendorId.swift */,
+				724CEE2022E8D0E100650499 /* UIView+Anchor.swift */,
+				724CEE2222E8D0E100650499 /* UIView+Shake.swift */,
+				72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +339,7 @@
 				724CEE4722E8D0E100650499 /* BioMetricError.swift in Sources */,
 				724CEE4422E8D0E100650499 /* NumberFormatter+Money.swift in Sources */,
 				724CEE4022E8D0E100650499 /* DateX.swift in Sources */,
+				72F0F1EF2339718000DDC3DD /* ExpandableCell.swift in Sources */,
 				724CEE3A22E8D0E100650499 /* UIView+Shake.swift in Sources */,
 				724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */,
 				724CEE4122E8D0E100650499 /* NSError+Simple.swift in Sources */,
