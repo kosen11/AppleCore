@@ -37,6 +37,8 @@
 		72A2338C22F8D6D500C76273 /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */; };
 		72A2339F22FA36F900C76273 /* UIViewController+NaviBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */; };
 		72F0F1EF2339718000DDC3DD /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */; };
+		72F0F1F523398C2000DDC3DD /* ExpandableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1F423398C2000DDC3DD /* ExpandableCollectionView.swift */; };
+		72F0F1F723398F4F00DDC3DD /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1F623398F4F00DDC3DD /* Callback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataProvider.swift; sourceTree = "<group>"; };
 		72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NaviBarHeight.swift"; sourceTree = "<group>"; };
 		72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
+		72F0F1F423398C2000DDC3DD /* ExpandableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCollectionView.swift; sourceTree = "<group>"; };
+		72F0F1F623398F4F00DDC3DD /* Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			children = (
 				72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */,
 				72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */,
+				72F0F1F423398C2000DDC3DD /* ExpandableCollectionView.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				724CEE3022E8D0E100650499 /* BioMetric */,
 				724CEE1B22E8D0E100650499 /* DataObject.swift */,
 				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
+				72F0F1F623398F4F00DDC3DD /* Callback.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				724CEE3A22E8D0E100650499 /* UIView+Shake.swift in Sources */,
 				724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */,
 				724CEE4122E8D0E100650499 /* NSError+Simple.swift in Sources */,
+				72F0F1F523398C2000DDC3DD /* ExpandableCollectionView.swift in Sources */,
 				720432372304CC8200E201F0 /* UITableVC.swift in Sources */,
 				72A2339F22FA36F900C76273 /* UIViewController+NaviBarHeight.swift in Sources */,
 				724CEE4522E8D0E100650499 /* String+Validation.swift in Sources */,
@@ -356,6 +363,7 @@
 				724CEE3B22E8D0E100650499 /* UIAlertController+Show.swift in Sources */,
 				724CEE3C22E8D0E100650499 /* DispatchTime+Later.swift in Sources */,
 				724CEE3922E8D0E100650499 /* UIDevice+VendorId.swift in Sources */,
+				72F0F1F723398F4F00DDC3DD /* Callback.swift in Sources */,
 				724CEE3F22E8D0E100650499 /* Bundle+Version.swift in Sources */,
 				724CEE3822E8D0E100650499 /* UIView+Anchor.swift in Sources */,
 			);

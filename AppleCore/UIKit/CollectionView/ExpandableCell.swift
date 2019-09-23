@@ -9,8 +9,20 @@
 import UIKit
 
 open class ExpandableCell: UICollectionViewCell {
-    private var initialFrame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
+    private var initialFrame = CGRect(x: 0, y: 0, width: 0, height: 0)
     private var initialCornerRadius: CGFloat = 0.0
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setupView()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        setupView()
+    }
     
     override open func awakeFromNib() {
         super.awakeFromNib()
