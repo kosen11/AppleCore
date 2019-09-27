@@ -9,5 +9,5 @@
 import Foundation
 
 public extension Bundle {
-    public static let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+    static let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 }

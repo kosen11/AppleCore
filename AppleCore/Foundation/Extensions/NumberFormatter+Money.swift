@@ -9,6 +9,7 @@
 import Foundation
 
 public extension NumberFormatter {
+    
     static let DEFAULT_LOCALE = Locale.current.languageCode ?? "en_US"
     static let DEFAULT_CURRENCY = Locale.current.currencyCode ?? "USD"
     

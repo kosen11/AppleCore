@@ -9,6 +9,7 @@
 import UIKit
 
 public class StringDataCell: UITableViewCell, DataObject {
+    
     private var title: String?
     
     public func data() -> Any? {

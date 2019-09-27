@@ -190,8 +190,8 @@
 				724CEE1C22E8D0E100650499 /* Extensions */,
 				724CEE3022E8D0E100650499 /* BioMetric */,
 				724CEE1B22E8D0E100650499 /* DataObject.swift */,
-				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
 				72F0F1F623398F4F00DDC3DD /* Callback.swift */,
+				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";

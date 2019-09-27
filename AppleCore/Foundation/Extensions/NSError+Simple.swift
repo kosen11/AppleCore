@@ -9,6 +9,7 @@
 import Foundation
 
 public extension NSError {
+    
     private static let DEFAULT_DOMAIN = Bundle.main.bundleIdentifier ?? ""
     
     static func simpleError(message: String) -> NSError {

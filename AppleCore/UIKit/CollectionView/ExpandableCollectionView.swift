@@ -9,6 +9,7 @@
 import UIKit
 
 open class ExpandableCollectionView: UICollectionView {
+    
     private var expandedCell: ExpandableCell?
     private var hiddenCells = Array<ExpandableCell>()
 

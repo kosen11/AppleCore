@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIAlertController {
+    
     static let UIAlertActionOKCancel = UIAlertAction.init(title: "OK", style: UIAlertAction.Style.cancel)
     
     static func showAlert(title: String?) {
