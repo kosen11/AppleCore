@@ -10,6 +10,9 @@
 		7204323023048B8E00E201F0 /* TableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204322F23048B8E00E201F0 /* TableDataProvider.swift */; };
 		720432322304C2D500E201F0 /* StringDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720432312304C2D500E201F0 /* StringDataCell.swift */; };
 		720432372304CC8200E201F0 /* UITableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720432362304CC8200E201F0 /* UITableVC.swift */; };
+		7231EEF1234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF0234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift */; };
+		7231EEF3234A0FAF00F77EE8 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */; };
+		7231EEF5234A125700F77EE8 /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF4234A125700F77EE8 /* String+JSON.swift */; };
 		724CEE0922E8D07100650499 /* AppleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724CEDFF22E8D07100650499 /* AppleCore.framework */; };
 		724CEE0E22E8D07100650499 /* AppleCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE0D22E8D07100650499 /* AppleCoreTests.swift */; };
 		724CEE1022E8D07100650499 /* AppleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 724CEE0222E8D07100650499 /* AppleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +58,9 @@
 		7204322F23048B8E00E201F0 /* TableDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataProvider.swift; sourceTree = "<group>"; };
 		720432312304C2D500E201F0 /* StringDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataCell.swift; sourceTree = "<group>"; };
 		720432362304CC8200E201F0 /* UITableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableVC.swift; sourceTree = "<group>"; };
+		7231EEF0234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+Rounding.swift"; sourceTree = "<group>"; };
+		7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		7231EEF4234A125700F77EE8 /* String+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSON.swift"; sourceTree = "<group>"; };
 		724CEDFF22E8D07100650499 /* AppleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CEE0222E8D07100650499 /* AppleCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleCore.h; sourceTree = "<group>"; };
 		724CEE0322E8D07100650499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -180,6 +186,9 @@
 				724CEE2D22E8D0E100650499 /* NumberFormatter+Money.swift */,
 				724CEE2E22E8D0E100650499 /* String+Validation.swift */,
 				724CEE2F22E8D0E100650499 /* NSNumber+Money.swift */,
+				7231EEF0234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift */,
+				7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */,
+				7231EEF4234A125700F77EE8 /* String+JSON.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -346,6 +355,7 @@
 				724CEE4422E8D0E100650499 /* NumberFormatter+Money.swift in Sources */,
 				724CEE4022E8D0E100650499 /* DateX.swift in Sources */,
 				72F0F1EF2339718000DDC3DD /* ExpandableCell.swift in Sources */,
+				7231EEF3234A0FAF00F77EE8 /* Dictionary+Extension.swift in Sources */,
 				724CEE3A22E8D0E100650499 /* UIView+Shake.swift in Sources */,
 				724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */,
 				724CEE4122E8D0E100650499 /* NSError+Simple.swift in Sources */,
@@ -358,6 +368,7 @@
 				7204323023048B8E00E201F0 /* TableDataProvider.swift in Sources */,
 				724CEE3E22E8D0E100650499 /* NSObject+ClassName.swift in Sources */,
 				724CEE4222E8D0E100650499 /* String+Append.swift in Sources */,
+				7231EEF1234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift in Sources */,
 				724CEE4322E8D0E100650499 /* String+Trim.swift in Sources */,
 				72A2338C22F8D6D500C76273 /* CollectionDataProvider.swift in Sources */,
 				724CEE3B22E8D0E100650499 /* UIAlertController+Show.swift in Sources */,
@@ -365,6 +376,7 @@
 				724CEE3922E8D0E100650499 /* UIDevice+VendorId.swift in Sources */,
 				72F0F1F723398F4F00DDC3DD /* Callback.swift in Sources */,
 				724CEE3F22E8D0E100650499 /* Bundle+Version.swift in Sources */,
+				7231EEF5234A125700F77EE8 /* String+JSON.swift in Sources */,
 				724CEE3822E8D0E100650499 /* UIView+Anchor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
