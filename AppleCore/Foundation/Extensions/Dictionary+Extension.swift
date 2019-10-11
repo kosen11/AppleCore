@@ -10,8 +10,13 @@ import Foundation
 
 public extension Dictionary {
     func toJsonString() -> String? {
+        return toJsonString(prettyPrint: false)
+    }
+    
+    func toJsonString(prettyPrint: Bool) -> String? {
         do {
-            let data = try JSONSerialization.data(withJSONObject: self, options: [])
+            let options: JSONSerialization.WritingOptions = prettyPrint ? [.prettyPrinted] : []
+            let data = try JSONSerialization.data(withJSONObject: self, options: options)
             
             return String(data: data, encoding: .utf8) ?? nil
         } catch {
