@@ -9,7 +9,7 @@
 import Foundation
 
 public extension NSDecimalNumber {
-    func roundCurrency() -> NSDecimalNumber {
+    var roundCurrency: NSDecimalNumber {
         return roundToScale(scale: 2)
     }
     

@@ -179,22 +179,22 @@
 		724CEE1C22E8D0E100650499 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				724CEE2522E8D0E100650499 /* DispatchTime+Later.swift */,
-				724CEE2622E8D0E100650499 /* NSNumberX.swift */,
-				724CEE2722E8D0E100650499 /* NSObject+ClassName.swift */,
 				724CEE2822E8D0E100650499 /* Bundle+Version.swift */,
 				724CEE2922E8D0E100650499 /* DateX.swift */,
-				724CEE2A22E8D0E100650499 /* NSError+Simple.swift */,
-				724CEE2B22E8D0E100650499 /* String+Append.swift */,
-				724CEE2C22E8D0E100650499 /* String+Trim.swift */,
-				724CEE2D22E8D0E100650499 /* NumberFormatter+Money.swift */,
-				724CEE2E22E8D0E100650499 /* String+Validation.swift */,
-				724CEE2F22E8D0E100650499 /* NSNumber+Money.swift */,
-				7231EEF0234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift */,
 				7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */,
-				7231EEF4234A125700F77EE8 /* String+JSON.swift */,
-				7231EF1D234FF2D800F77EE8 /* TimeIntervalX.swift */,
+				724CEE2522E8D0E100650499 /* DispatchTime+Later.swift */,
+				7231EEF0234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift */,
+				724CEE2A22E8D0E100650499 /* NSError+Simple.swift */,
+				724CEE2F22E8D0E100650499 /* NSNumber+Money.swift */,
+				724CEE2622E8D0E100650499 /* NSNumberX.swift */,
+				724CEE2722E8D0E100650499 /* NSObject+ClassName.swift */,
+				724CEE2D22E8D0E100650499 /* NumberFormatter+Money.swift */,
+				724CEE2B22E8D0E100650499 /* String+Append.swift */,
 				7211500B23513EE500F7E1B9 /* String+Error.swift */,
+				7231EEF4234A125700F77EE8 /* String+JSON.swift */,
+				724CEE2C22E8D0E100650499 /* String+Trim.swift */,
+				724CEE2E22E8D0E100650499 /* String+Validation.swift */,
+				7231EF1D234FF2D800F77EE8 /* TimeIntervalX.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

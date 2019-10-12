@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIDevice {
-    func vendorId() -> String? {
+    var vendorId: String? {
         return identifierForVendor?.uuidString
     }
 }

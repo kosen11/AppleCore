@@ -13,7 +13,7 @@ public extension NumberFormatter {
     static let DEFAULT_LOCALE = Locale.current.languageCode ?? "en_US"
     static let DEFAULT_CURRENCY = Locale.current.currencyCode ?? "USD"
     
-    static func defaultCurrencyFormatter() -> NumberFormatter {
+    static var defaultCurrencyFormatter: NumberFormatter {
         return currencyFormatter(locale: DEFAULT_LOCALE, currency: DEFAULT_CURRENCY)
     }
     
@@ -38,11 +38,9 @@ public extension NumberFormatter {
         return formatter
     }
     
-    private static var _currency: NumberFormatter = defaultCurrencyFormatter()
+    private static var _currency: NumberFormatter = defaultCurrencyFormatter
     static var currency: NumberFormatter {
-        get {
-            return _currency
-        }
+        return _currency
     }
     
     static func updateCurrencyFormatter(locale: String?, currency: String?) {

@@ -8,7 +8,64 @@
 
 import Foundation
 
+enum Weekday : Int {
+    case sunday = 0
+    case monday = 1
+    case tuesday = 2
+    case wednesday = 3
+    case thursday = 4
+    case friday = 5
+    case saturday = 6
+}
+
 public extension Date {
+    
+    var dateShort: String {
+        return DateFormatter.localizedString(from: self, dateStyle: .short, timeStyle: .none)
+    }
+    
+    var dateMedium: String {
+        return DateFormatter.localizedString(from: self, dateStyle: .medium, timeStyle: .none)
+    }
+    
+    var dateLong: String {
+        return DateFormatter.localizedString(from: self, dateStyle: .long, timeStyle: .none)
+    }
+    
+    var timeShort: String {
+        return DateFormatter.localizedString(from: self, dateStyle: .none, timeStyle: .short)
+    }
+    
+    var timeMedium: String {
+        return DateFormatter.localizedString(from: self, dateStyle: .none, timeStyle: .medium)
+    }
+    
+    var timeLong: String {
+        return DateFormatter.localizedString(from: self, dateStyle: .none, timeStyle: .long)
+    }
+    
+    var dayOfWeek: String {
+        get {
+            let weekday: Weekday = Weekday(rawValue: NSCalendar.current.component(.weekday, from: self)) ?? .sunday
+            switch(weekday) {
+            case .sunday:
+                return "Sunday"
+            case .monday:
+                return "Monday"
+            case .tuesday:
+                return "Tuesday"
+            case .wednesday:
+                return "Wednesday"
+            case .thursday:
+                return "Thursday"
+            case .friday:
+                return "Friday"
+            case .saturday:
+                return "Saturday"
+            }
+        }
+        
+    }
     
     static var yesterday: Date {
         return Date().dayBefore

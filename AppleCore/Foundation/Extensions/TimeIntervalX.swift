@@ -9,31 +9,31 @@
 import UIKit
 
 public extension TimeInterval {
-    static func second() -> Double {
+    static var second: Double {
         return 1
     }
     
-    static func minute() -> Double {
+    static var minute: Double {
         return 60
     }
     
-    static func hour() -> Double {
+    static var hour: Double {
         return 3600
     }
     
-    static func day() -> Double {
+    static var day: Double {
         return 86400
     }
     
     static func days(count: Int) -> Double {
-        return day() * Double(count)
+        return day * Double(count)
     }
     
-    static func week() -> Double {
+    static var week: Double {
         return 604800
     }
     
-    static func year() -> Double {
+    static var year: Double {
         return 31536000
     }
 }

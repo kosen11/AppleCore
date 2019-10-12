@@ -50,7 +50,7 @@ public class CollectionDataProvider: NSObject, UICollectionViewDataSource {
     
     private func dataForIndexPath(_ indexPath: IndexPath) -> Any? {
         let index = indexPath.section * sectionSize + indexPath.row
-        return (index < data.count) ? data[index] : nil
+        return data[index]
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

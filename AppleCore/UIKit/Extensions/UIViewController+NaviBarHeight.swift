@@ -9,7 +9,7 @@
 import Foundation
 
 public extension UIViewController {
-    func navigationBarHeight() -> CGFloat {
+    var navigationBarHeight: CGFloat {
         return navigationController?.navigationBar.frame.height ?? 0
     }
 }

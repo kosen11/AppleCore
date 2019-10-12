@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Dictionary {
-    func toJsonString() -> String? {
+    var jsonString: String? {
         return toJsonString(prettyPrint: false)
     }
     

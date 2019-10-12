@@ -9,22 +9,25 @@
 import Foundation
 
 public extension NSNumber {
-    func currencyString() -> String {
+    var currencyString: String {
         return NumberFormatter.currency.string(from: self) ?? self.stringValue
     }
     
-    func percentageString() -> String {
-        let value = NumberFormatter.percentage.string(from: self) ?? self.stringValue
-        return "\(value)%"
+    var percentageString: String {
+        get {
+            let value = NumberFormatter.percentage.string(from: self) ?? self.stringValue
+            return "\(value)%"
+        }
     }
     
-    func taxString() -> String {
-        let value = NumberFormatter.tax.string(from: self) ?? self.stringValue
-        return "\(value)%"
+    var taxString: String {
+        get {
+            let value = NumberFormatter.tax.string(from: self) ?? self.stringValue
+            return "\(value)%"
+        }
     }
     
-    //TODO: use decimal place parameter
-    func minorUnits() -> Int {
-        return (Int)(self.doubleValue * 100.0)
+    var minorUnits: Int {
+        return (Int)(self.doubleValue * 100.0 + 0.5)
     }
 }

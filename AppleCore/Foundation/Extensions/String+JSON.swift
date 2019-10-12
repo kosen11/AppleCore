@@ -9,7 +9,7 @@
 import Foundation
 
 public extension String {
-    func toJsonDictionary() -> Dictionary<String, Any>? {
+    var jsonDictionary: Dictionary<String, Any>? {
         let metaData = data(using: .utf8)
         if let data = metaData {
             do {

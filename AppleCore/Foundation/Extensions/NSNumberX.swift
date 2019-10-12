@@ -10,27 +10,27 @@ import Foundation
 
 public extension NSNumber {
     
-    func isZero() -> Bool {
+    var isZero: Bool {
         return self.compare(0) == .orderedSame
     }
     
-    func isOne() -> Bool {
+    var isOne: Bool {
         return self.compare(1) == .orderedSame
     }
     
-    func isPositive() -> Bool {
+    var isPositive: Bool {
         return self.compare(0) == .orderedDescending
     }
     
-    func isNotPositive() -> Bool {
+    var isNotPositive: Bool {
         return self.compare(0) != .orderedDescending
     }
     
-    func isNegative() -> Bool {
+    var isNegative: Bool {
         return self.compare(0) == .orderedAscending
     }
     
-    func isNotNegative() -> Bool {
+    var isNotNegative: Bool {
         return self.compare(0) != .orderedAscending
     }
     
