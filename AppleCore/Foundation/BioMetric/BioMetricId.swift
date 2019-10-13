@@ -21,24 +21,23 @@ public class BioMetricId: NSObject {
             if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
                 print("bio metric enabled")
                 context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reasonString) { success, evaluateError in
-                    DispatchQueue.main.async {
-                        if success {
-                            print("bio metric success")
-                            callback(.success(true))
-                        } else {
-                            print("bio metric failed")
-                            callback(.failure(BioMetricError.failed))
-                        }
+                    if success {
+                        print("bio metric success")
+                        callback(.success(true))
+                    } else {
+                        let message = evaluateError?.localizedDescription ?? ""
+                        print("bio metric failed: \(message)")
+                        callback(.failure(.failed))
                     }
                 }
             } else {
                 let message = authError?.localizedDescription ?? ""
                 print("bio metric not set: \(message)")
-                callback(.failure(BioMetricError.notSet))
+                callback(.failure(.notSet))
             }
         } else {
             print("bio metric unsupported")
-            callback(.failure(BioMetricError.unsupported))
+            callback(.failure(.unsupported))
         }
     }
 }
