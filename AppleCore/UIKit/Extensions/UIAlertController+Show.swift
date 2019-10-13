@@ -41,7 +41,7 @@ public extension UIAlertController {
         presentAlertController(alertController: alert, animated: animated)
     }
     
-    static func presentAlertController(alertController: UIAlertController!, animated: Bool) {
+    static func presentAlertController(alertController: UIAlertController!, animated: Bool = true) {
         print("ALERT! title: \(String(describing: alertController.title)) message: \(String(describing: alertController.message))")
         DispatchQueue.main.async {
             UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: animated, completion: nil)

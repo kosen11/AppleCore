@@ -2,7 +2,6 @@
 //  UIView+Shake.swift
 //  iOSReports
 //
-//  Created by Ray Pietz on 7/8/19.
 //  Copyright © 2019 talech Inc.
 //
 //  This program is free software: you can redistribute it and/or modify

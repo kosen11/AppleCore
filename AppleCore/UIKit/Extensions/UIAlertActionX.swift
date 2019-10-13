@@ -22,11 +22,7 @@ import Foundation
 import UIKit
 
 public extension UIAlertAction {
-    convenience init(title: String?) {
-        self.init(title: title, style: UIAlertAction.Style.default, handler: nil)
-    }
-    
-    convenience init(title: String?, style: UIAlertAction.Style) {
+    convenience init(title: String?, style: UIAlertAction.Style = .default) {
         self.init(title: title, style: style, handler: nil)
     }
 }

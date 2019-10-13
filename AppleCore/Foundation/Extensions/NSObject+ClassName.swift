@@ -2,7 +2,6 @@
 //  NSObject+ClassName.swift
 //  iOSReports
 //
-//  Created by Ray Pietz on 6/17/19.
 //  Copyright © 2019 talech Inc.
 //
 //  This program is free software: you can redistribute it and/or modify
