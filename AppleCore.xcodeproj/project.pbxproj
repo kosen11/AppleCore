@@ -39,6 +39,7 @@
 		724CEE4722E8D0E100650499 /* BioMetricError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE3122E8D0E100650499 /* BioMetricError.swift */; };
 		724CEE4822E8D0E100650499 /* BioMetricId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE3222E8D0E100650499 /* BioMetricId.swift */; };
 		724CEE4922E8D0E100650499 /* ResultCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE3322E8D0E100650499 /* ResultCallback.swift */; };
+		728950A523537F1F00878E18 /* UINavigationController+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728950A423537F1F00878E18 /* UINavigationController+Transition.swift */; };
 		72A2338C22F8D6D500C76273 /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */; };
 		72A2339F22FA36F900C76273 /* UIViewController+NaviBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */; };
 		72F0F1EF2339718000DDC3DD /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */; };
@@ -92,6 +93,7 @@
 		724CEE3122E8D0E100650499 /* BioMetricError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioMetricError.swift; sourceTree = "<group>"; };
 		724CEE3222E8D0E100650499 /* BioMetricId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioMetricId.swift; sourceTree = "<group>"; };
 		724CEE3322E8D0E100650499 /* ResultCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultCallback.swift; sourceTree = "<group>"; };
+		728950A423537F1F00878E18 /* UINavigationController+Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transition.swift"; sourceTree = "<group>"; };
 		72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataProvider.swift; sourceTree = "<group>"; };
 		72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NaviBarHeight.swift"; sourceTree = "<group>"; };
 		72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				724CEE2322E8D0E100650499 /* UIAlertController+Show.swift */,
 				724CEE1E22E8D0E100650499 /* UIColor+Hex.swift */,
 				724CEE2122E8D0E100650499 /* UIDevice+VendorId.swift */,
+				728950A423537F1F00878E18 /* UINavigationController+Transition.swift */,
 				724CEE2022E8D0E100650499 /* UIView+Anchor.swift */,
 				724CEE2222E8D0E100650499 /* UIView+Shake.swift */,
 				72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */,
@@ -373,6 +376,7 @@
 				724CEE4522E8D0E100650499 /* String+Validation.swift in Sources */,
 				724CEE4822E8D0E100650499 /* BioMetricId.swift in Sources */,
 				724CEE4622E8D0E100650499 /* NSNumber+Money.swift in Sources */,
+				728950A523537F1F00878E18 /* UINavigationController+Transition.swift in Sources */,
 				7231EF1E234FF2D800F77EE8 /* TimeIntervalX.swift in Sources */,
 				7204323023048B8E00E201F0 /* TableDataProvider.swift in Sources */,
 				724CEE3E22E8D0E100650499 /* NSObject+ClassName.swift in Sources */,

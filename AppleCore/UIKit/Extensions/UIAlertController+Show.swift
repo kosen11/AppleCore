@@ -25,15 +25,7 @@ public extension UIAlertController {
     
     static let UIAlertActionOKCancel = UIAlertAction.init(title: "OK", style: UIAlertAction.Style.cancel)
     
-    static func showAlert(title: String?) {
-        showAlert(title: title, message: nil, actions: UIAlertActionOKCancel)
-    }
-    
-    static func showAlert(title: String?, message: String?) {
-        showAlert(title: title, message: message, actions: UIAlertActionOKCancel)
-    }
-    
-    static func showAlert(title: String?, message: String?, animated: Bool) {
+    static func showAlert(title: String? = nil, message: String? = nil, animated: Bool = true) {
         showAlert(title: title, message: message, animated: animated, actions: UIAlertActionOKCancel)
     }
     
@@ -43,7 +35,7 @@ public extension UIAlertController {
         presentAlertController(alertController: alert, animated: true)
     }
     
-    static func showAlert(title: String? = nil, message: String? = nil, animated: Bool, actions: UIAlertAction?...) {
+    static func showAlert(title: String? = nil, message: String? = nil, animated: Bool = true, actions: UIAlertAction?...) {
         let alert: UIAlertController = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addActions(actions: actions as? [UIAlertAction])
         presentAlertController(alertController: alert, animated: animated)
