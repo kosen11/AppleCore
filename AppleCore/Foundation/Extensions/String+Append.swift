@@ -9,17 +9,6 @@
 import Foundation
 
 public extension String {
-    mutating func appendLine(text: String) {
-        if text.count == 0 {
-            return
-        }
-        
-        if count > 0 {
-            append("\n")
-        }
-        append(text)
-    }
-    
     mutating func appendCSV(value: String) {
         appendCSV(value: value, addSpace: false)
     }
