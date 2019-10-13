@@ -14,11 +14,6 @@ open class ExpandableCollectionView: UICollectionView {
     private var hiddenCells = Array<ExpandableCell>()
 
     public func toggleCellExpand(indexPath: IndexPath, animationCompleteCallback: Callback<Bool>?) {
-        //        if collectionView.contentOffset.y < 0 ||
-        //            collectionView.contentOffset.y > collectionView.contentSize.height - collectionView.frame.height {
-        //            return
-        //        }
-        
         let dampingRatio: CGFloat = 0.8
         let initialVelocity = CGVector.zero
         let springParameters = UISpringTimingParameters(dampingRatio: dampingRatio, initialVelocity: initialVelocity)
@@ -28,7 +23,6 @@ open class ExpandableCollectionView: UICollectionView {
         isUserInteractionEnabled = false
         
         if let selectedCell = expandedCell {
-            //isStatusBarHidden = false
             isShow = false
             
             animator.addAnimations {
@@ -45,7 +39,6 @@ open class ExpandableCollectionView: UICollectionView {
                 self.hiddenCells.removeAll()
             }
         } else {
-            //isStatusBarHidden = true
             isShow = true
             
             isScrollEnabled = false
@@ -58,20 +51,15 @@ open class ExpandableCollectionView: UICollectionView {
             
             animator.addAnimations {
                 selectedCell.expand(in: self)
-                
+
                 for cell in self.hiddenCells {
                     cell.hide(in: self, frameOfSelectedCell: frameOfSelectedCell)
                 }
             }
         }
         
-//        animator.addAnimations {
-//            self.setNeedsStatusBarAppearanceUpdate()
-//        }
-        
         animator.addCompletion { _ in
             self.isUserInteractionEnabled = true
-            
             animationCompleteCallback?(isShow)
         }
         
