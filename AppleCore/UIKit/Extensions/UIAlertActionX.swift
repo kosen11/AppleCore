@@ -1,6 +1,6 @@
 //
 //  UIAlertActionX.swift
-//  iOSReports
+//  AppleCore
 //
 //  Created by Ray Pietz on 6/12/19.
 //  Copyright © 2019 talech Inc.

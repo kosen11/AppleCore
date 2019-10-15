@@ -1,6 +1,6 @@
 //
 //  CollectionDataProvider.swift
-//  iOSReports
+//  AppleCore
 //
 //  Created by Ray Pietz on 7/29/19.
 //  Copyright © 2019 talech Inc.

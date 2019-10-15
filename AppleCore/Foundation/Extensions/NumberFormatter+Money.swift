@@ -1,6 +1,6 @@
 //
 //  NumberFormatter+Money.swift
-//  iOSReports
+//  AppleCore
 //
 //  Created by Ray Pietz on 6/25/19.
 //  Copyright © 2019 talech Inc.

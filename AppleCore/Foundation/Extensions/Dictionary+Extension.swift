@@ -25,7 +25,7 @@ public extension Dictionary {
         return toJsonString(prettyPrint: false)
     }
     
-    func toJsonString(prettyPrint: Bool) -> String? {
+    func toJsonString(prettyPrint: Bool = false) -> String? {
         do {
             let options: JSONSerialization.WritingOptions = prettyPrint ? [.prettyPrinted] : []
             let data = try JSONSerialization.data(withJSONObject: self, options: options)

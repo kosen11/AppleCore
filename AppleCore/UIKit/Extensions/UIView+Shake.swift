@@ -1,6 +1,6 @@
 //
 //  UIView+Shake.swift
-//  iOSReports
+//  AppleCore
 //
 //  Copyright © 2019 talech Inc.
 //

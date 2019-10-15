@@ -1,6 +1,6 @@
 //
 //  UIAlertControllerX.swift
-//  iOSReports
+//  AppleCore
 //
 //  Created by Ray Pietz on 6/12/19.
 //  Copyright © 2019 talech Inc.
@@ -30,13 +30,13 @@ public extension UIAlertController {
     }
     
     static func showAlert(title: String? = nil, message: String? = nil, actions: UIAlertAction?...) {
-        let alert: UIAlertController = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let alert: UIAlertController = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         alert.addActions(actions: actions as? [UIAlertAction])
         presentAlertController(alertController: alert, animated: true)
     }
     
     static func showAlert(title: String? = nil, message: String? = nil, animated: Bool = true, actions: UIAlertAction?...) {
-        let alert: UIAlertController = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let alert: UIAlertController = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         alert.addActions(actions: actions as? [UIAlertAction])
         presentAlertController(alertController: alert, animated: animated)
     }
