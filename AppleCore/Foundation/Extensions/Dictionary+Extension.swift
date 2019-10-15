@@ -22,7 +22,7 @@ import Foundation
 
 public extension Dictionary {
     var jsonString: String? {
-        return toJsonString(prettyPrint: false)
+        return toJsonString()
     }
     
     func toJsonString(prettyPrint: Bool = false) -> String? {

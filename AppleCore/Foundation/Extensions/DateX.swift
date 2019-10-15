@@ -56,6 +56,7 @@ public extension Date {
         return DateFormatter.localizedString(from: self, dateStyle: .none, timeStyle: .long)
     }
     
+    //TODO: move localization out and just return Weekday
     var dayOfWeek: String {
         get {
             let weekday: Weekday = Weekday(rawValue: NSCalendar.current.component(.weekday, from: self)) ?? .sunday
@@ -76,7 +77,6 @@ public extension Date {
                 return "Saturday"
             }
         }
-        
     }
     
     static var yesterday: Date {
