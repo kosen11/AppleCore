@@ -20,18 +20,15 @@
 
 import UIKit
 
-public class StringDataCell: UITableViewCell, DataObject {
+public class StringDataCell: BaseTableCell {
     
-    private var title: String?
-    
-    public func data() -> Any? {
-        return title
+    private var titleText: String? {
+        return data() as? String
     }
     
-    public func setData(data: Any?) {
-        if let text = data as? String {
-            title = text
-            textLabel?.text = text
+    override public func updateData() {
+        DispatchQueue.main.async {
+            self.textLabel?.text = self.titleText
         }
     }
 }

@@ -21,7 +21,15 @@
 import Foundation
 
 public extension UIViewController {
+    var statusBarHeight: CGFloat {
+        return prefersStatusBarHidden ? 0 : 20
+    }
+    
     var navigationBarHeight: CGFloat {
         return navigationController?.navigationBar.frame.height ?? 0
+    }
+    
+    var safeAreaTop: CGFloat {
+        return navigationBarHeight + statusBarHeight
     }
 }
