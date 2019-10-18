@@ -60,7 +60,7 @@ public extension Date {
     var dayOfWeek: String {
         get {
             let weekday: Weekday = Weekday(rawValue: NSCalendar.current.component(.weekday, from: self)) ?? .sunday
-            switch(weekday) {
+            switch weekday {
             case .sunday:
                 return "Sunday"
             case .monday:
