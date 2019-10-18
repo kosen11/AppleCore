@@ -1,5 +1,5 @@
 //
-//  BaseTableCell.swift
+//  DataCell.swift
 //  AppleCore
 //
 //  Created by Ray Pietz on 10/17/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class BaseTableCell: UITableViewCell, DataObject {
+open class DataCell: UITableViewCell, DataObject {
 
     private var _data: Any?
     

@@ -15,7 +15,7 @@
 		7231EEF3234A0FAF00F77EE8 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */; };
 		7231EEF5234A125700F77EE8 /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF4234A125700F77EE8 /* String+JSON.swift */; };
 		7231EF1E234FF2D800F77EE8 /* TimeIntervalX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EF1D234FF2D800F77EE8 /* TimeIntervalX.swift */; };
-		723AC0942359046200A21AAE /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723AC0932359046200A21AAE /* BaseTableCell.swift */; };
+		723AC0942359046200A21AAE /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723AC0932359046200A21AAE /* DataCell.swift */; };
 		723AC09623590A6500A21AAE /* UITableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723AC09523590A6500A21AAE /* UITableVC.swift */; };
 		724CEE0922E8D07100650499 /* AppleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724CEDFF22E8D07100650499 /* AppleCore.framework */; };
 		724CEE0E22E8D07100650499 /* AppleCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CEE0D22E8D07100650499 /* AppleCoreTests.swift */; };
@@ -68,7 +68,7 @@
 		7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		7231EEF4234A125700F77EE8 /* String+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSON.swift"; sourceTree = "<group>"; };
 		7231EF1D234FF2D800F77EE8 /* TimeIntervalX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalX.swift; sourceTree = "<group>"; };
-		723AC0932359046200A21AAE /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		723AC0932359046200A21AAE /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 		723AC09523590A6500A21AAE /* UITableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableVC.swift; sourceTree = "<group>"; };
 		724CEDFF22E8D07100650499 /* AppleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CEE0222E8D07100650499 /* AppleCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleCore.h; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 				7204322F23048B8E00E201F0 /* TableDataProvider.swift */,
 				723AC09523590A6500A21AAE /* UITableVC.swift */,
 				720432362304CC8200E201F0 /* UIPopoverTableVC.swift */,
-				723AC0932359046200A21AAE /* BaseTableCell.swift */,
+				723AC0932359046200A21AAE /* DataCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -363,7 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				720432322304C2D500E201F0 /* StringDataCell.swift in Sources */,
-				723AC0942359046200A21AAE /* BaseTableCell.swift in Sources */,
+				723AC0942359046200A21AAE /* DataCell.swift in Sources */,
 				724CEE3622E8D0E100650499 /* UIColor+Hex.swift in Sources */,
 				724CEE3522E8D0E100650499 /* DataObject.swift in Sources */,
 				7211500C23513EE500F7E1B9 /* String+Error.swift in Sources */,
