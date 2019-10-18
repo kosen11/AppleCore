@@ -1,5 +1,5 @@
 //
-//  UIPopoverTableVC.swift
+//  DataPopoverTableVC.swift
 //  AppleCore
 //
 //  Created by Ray Pietz on 8/14/19.
@@ -20,7 +20,7 @@
 
 import UIKit
 
-open class UIPopoverTableVC: UITableVC {
+open class DataPopoverTableVC: DataTableVC {
     
     private static let CONTENT_SIZE_KEY_PATH = "contentSize"
     private var contentObserverAdded: Bool = false
@@ -28,7 +28,7 @@ open class UIPopoverTableVC: UITableVC {
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        tableView.addObserver(self, forKeyPath: UIPopoverTableVC.CONTENT_SIZE_KEY_PATH, options: .new, context: nil)
+        tableView.addObserver(self, forKeyPath: DataPopoverTableVC.CONTENT_SIZE_KEY_PATH, options: .new, context: nil)
         contentObserverAdded = true
     }
     
@@ -36,14 +36,14 @@ open class UIPopoverTableVC: UITableVC {
         super.viewWillDisappear(animated)
         
         if contentObserverAdded {
-            tableView.removeObserver(self, forKeyPath: UIPopoverTableVC.CONTENT_SIZE_KEY_PATH)
+            tableView.removeObserver(self, forKeyPath: DataPopoverTableVC.CONTENT_SIZE_KEY_PATH)
             contentObserverAdded = false
         }
     }
     
     override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if let path = keyPath {
-            if path == UIPopoverTableVC.CONTENT_SIZE_KEY_PATH {
+            if path == DataPopoverTableVC.CONTENT_SIZE_KEY_PATH {
                 preferredContentSize = tableView.contentSize
             }
         }

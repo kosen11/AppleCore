@@ -1,5 +1,5 @@
 //
-//  UITableVC.swift
+//  DataTableVC.swift
 //  AppleCore
 //
 //  Created by Ray Pietz on 10/17/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class UITableVC: UITableViewController, DataObject {
+open class DataTableVC: UITableViewController, DataObject {
 
     private var _data: Any?
     
