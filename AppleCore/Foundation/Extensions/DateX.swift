@@ -135,4 +135,69 @@ public extension Date {
     var isLastDayOfMonth: Bool {
         return dayAfter.month != month
     }
+    
+    var timeElapsedShort: String {
+        return timeElapsedShort(toDate: Date())
+    }
+    
+    func timeElapsedShort(toDate: Date) -> String {
+        var secondsDiff = toDate.timeIntervalSince1970 - timeIntervalSince1970
+        if secondsDiff == 0 {
+            return "Now"
+        }
+        
+        let daysDiff = Int(secondsDiff / TimeInterval.day)
+        secondsDiff -= Double(daysDiff) * TimeInterval.day
+        let hoursDiff = Int(secondsDiff / TimeInterval.hour)
+        secondsDiff -= Double(hoursDiff) * TimeInterval.hour
+        let minutesDiff = Int(secondsDiff / TimeInterval.minute)
+        
+        let daysText = "\(daysDiff)d"
+        let hoursText = "\(hoursDiff)h"
+        let minutesText = "\(minutesDiff)m"
+        return [daysText, hoursText, minutesText].joined(separator: " ").trimmed
+    }
+    
+    var timeElapsed: String {
+        return timeElapsed(toDate: Date())
+    }
+    
+    func timeElapsed(toDate: Date) -> String {
+        var secondsDiff = toDate.timeIntervalSince1970 - timeIntervalSince1970
+        if secondsDiff == 0 {
+            return "Now"
+        }
+        
+        let daysDiff = Int(secondsDiff / TimeInterval.day)
+        secondsDiff -= Double(daysDiff) * TimeInterval.day
+        let hoursDiff = Int(secondsDiff / TimeInterval.hour)
+        secondsDiff -= Double(hoursDiff) * TimeInterval.hour
+        let minutesDiff = Int(secondsDiff / TimeInterval.minute)
+        
+        var daysText = ""
+        if daysDiff == 1 {
+            daysText = "1 day"
+        }
+        else if daysDiff > 1 {
+            daysText = "\(daysDiff) days"
+        }
+        
+        var hoursText = ""
+        if hoursDiff == 1 {
+            hoursText = "1 hour"
+        }
+        else if hoursDiff > 1 {
+            hoursText = "\(hoursDiff) hours"
+        }
+        
+        var minutesText = ""
+        if minutesDiff == 1 {
+            minutesText = "1 minute"
+        }
+        else if minutesDiff > 1 {
+            minutesText = "\(minutesDiff) minutes"
+        }
+        
+        return [daysText, hoursText, minutesText].joined(separator: " ").trimmed
+    }
 }

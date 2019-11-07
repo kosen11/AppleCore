@@ -20,7 +20,7 @@
 
 import UIKit
 
-public class TableDataProvider: NSObject, UITableViewDataSource {
+open class TableDataProvider: NSObject, UITableViewDataSource {
     
     public let reuseIdentifier: String
     public var data: Array<Array<Any>>?
@@ -42,7 +42,7 @@ public class TableDataProvider: NSObject, UITableViewDataSource {
         guard let titles = sectionTitles else {
             return nil
         }
-        
+
         return titles[section]
     }
     
@@ -50,7 +50,7 @@ public class TableDataProvider: NSObject, UITableViewDataSource {
         return data?[section].count ?? 0
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         
         if let dataObject: DataObject = cell as? DataObject {

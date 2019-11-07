@@ -20,7 +20,7 @@
 
 import UIKit
 
-public class StringDataCell: DataCell {
+open class StringDataCell: DataCell {
     
     private var titleText: String? {
         return data() as? String
