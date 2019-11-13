@@ -26,7 +26,7 @@ open class StringDataCell: DataCell {
         return data() as? String
     }
     
-    override public func updateData() {
+    override open func updateDataView() {
         DispatchQueue.main.async {
             self.textLabel?.text = self.titleText
         }

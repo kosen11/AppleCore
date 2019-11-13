@@ -21,7 +21,9 @@
 import Foundation
 
 public extension NSDecimalNumber {
-    var roundCurrency: NSDecimalNumber {
+    static var negativeOne: NSDecimalNumber { return NSDecimalNumber(value: -1) }
+    
+    var roundedCurrency: NSDecimalNumber {
         return roundToScale(scale: 2)
     }
     
@@ -32,5 +34,9 @@ public extension NSDecimalNumber {
                                                                          raiseOnOverflow: false,
                                                                          raiseOnUnderflow:false,
                                                                          raiseOnDivideByZero: false))
+    }
+    
+    var negative: NSDecimalNumber {
+        return self.multiplying(by: NSDecimalNumber.negativeOne)
     }
 }

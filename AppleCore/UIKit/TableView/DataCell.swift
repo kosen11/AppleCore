@@ -18,10 +18,10 @@ open class DataCell: UITableViewCell, DataObject {
 
     public func setData(data: Any?) {
         _data = data
-        updateData()
+        updateDataView()
     }
     
-    public func updateData() {
+    open func updateDataView() {
         //TODO: override in child implementation
     }
 }

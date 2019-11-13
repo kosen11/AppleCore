@@ -44,6 +44,9 @@
 		728950A523537F1F00878E18 /* UINavigationController+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728950A423537F1F00878E18 /* UINavigationController+Transition.swift */; };
 		72A2338C22F8D6D500C76273 /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */; };
 		72A2339F22FA36F900C76273 /* UIViewController+NaviBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */; };
+		72ECC9C3237465AA00051670 /* UITextField+Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ECC9C2237465AA00051670 /* UITextField+Secure.swift */; };
+		72ECC9CD2374B3F500051670 /* String+Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ECC9CC2374B3F500051670 /* String+Money.swift */; };
+		72ECC9CF2374BB7500051670 /* UITextField+Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ECC9CE2374BB7500051670 /* UITextField+Selection.swift */; };
 		72F0F1EF2339718000DDC3DD /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */; };
 		72F0F1F523398C2000DDC3DD /* ExpandableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1F423398C2000DDC3DD /* ExpandableCollectionView.swift */; };
 		72F0F1F723398F4F00DDC3DD /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0F1F623398F4F00DDC3DD /* Callback.swift */; };
@@ -100,6 +103,9 @@
 		728950A423537F1F00878E18 /* UINavigationController+Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transition.swift"; sourceTree = "<group>"; };
 		72A2338B22F8D6D500C76273 /* CollectionDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataProvider.swift; sourceTree = "<group>"; };
 		72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NaviBarHeight.swift"; sourceTree = "<group>"; };
+		72ECC9C2237465AA00051670 /* UITextField+Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Secure.swift"; sourceTree = "<group>"; };
+		72ECC9CC2374B3F500051670 /* String+Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Money.swift"; sourceTree = "<group>"; };
+		72ECC9CE2374BB7500051670 /* UITextField+Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Selection.swift"; sourceTree = "<group>"; };
 		72F0F1EE2339718000DDC3DD /* ExpandableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
 		72F0F1F423398C2000DDC3DD /* ExpandableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCollectionView.swift; sourceTree = "<group>"; };
 		72F0F1F623398F4F00DDC3DD /* Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
@@ -203,6 +209,7 @@
 				724CEE2C22E8D0E100650499 /* String+Trim.swift */,
 				724CEE2E22E8D0E100650499 /* String+Validation.swift */,
 				7231EF1D234FF2D800F77EE8 /* TimeIntervalX.swift */,
+				72ECC9CC2374B3F500051670 /* String+Money.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +256,8 @@
 				724CEE2022E8D0E100650499 /* UIView+Anchor.swift */,
 				724CEE2222E8D0E100650499 /* UIView+Shake.swift */,
 				72A2339E22FA36F900C76273 /* UIViewController+NaviBarHeight.swift */,
+				72ECC9C2237465AA00051670 /* UITextField+Secure.swift */,
+				72ECC9CE2374BB7500051670 /* UITextField+Selection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -376,6 +385,7 @@
 				7231EEF3234A0FAF00F77EE8 /* Dictionary+Extension.swift in Sources */,
 				724CEE3A22E8D0E100650499 /* UIView+Shake.swift in Sources */,
 				724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */,
+				72ECC9CF2374BB7500051670 /* UITextField+Selection.swift in Sources */,
 				724CEE4122E8D0E100650499 /* NSError+Simple.swift in Sources */,
 				72F0F1F523398C2000DDC3DD /* ExpandableCollectionView.swift in Sources */,
 				720432372304CC8200E201F0 /* DataPopoverTableVC.swift in Sources */,
@@ -395,7 +405,9 @@
 				724CEE3B22E8D0E100650499 /* UIAlertController+Show.swift in Sources */,
 				724CEE3C22E8D0E100650499 /* DispatchTime+Later.swift in Sources */,
 				724CEE3922E8D0E100650499 /* UIDevice+VendorId.swift in Sources */,
+				72ECC9CD2374B3F500051670 /* String+Money.swift in Sources */,
 				72F0F1F723398F4F00DDC3DD /* Callback.swift in Sources */,
+				72ECC9C3237465AA00051670 /* UITextField+Secure.swift in Sources */,
 				724CEE3F22E8D0E100650499 /* Bundle+Version.swift in Sources */,
 				7231EEF5234A125700F77EE8 /* String+JSON.swift in Sources */,
 				724CEE3822E8D0E100650499 /* UIView+Anchor.swift in Sources */,
