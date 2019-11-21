@@ -58,24 +58,22 @@ public extension Date {
     
     //TODO: move localization out and just return Weekday
     var dayOfWeek: String {
-        get {
-            let weekday: Weekday = Weekday(rawValue: NSCalendar.current.component(.weekday, from: self)) ?? .sunday
-            switch weekday {
-            case .sunday:
-                return "Sunday"
-            case .monday:
-                return "Monday"
-            case .tuesday:
-                return "Tuesday"
-            case .wednesday:
-                return "Wednesday"
-            case .thursday:
-                return "Thursday"
-            case .friday:
-                return "Friday"
-            case .saturday:
-                return "Saturday"
-            }
+        let weekday: Weekday = Weekday(rawValue: NSCalendar.current.component(.weekday, from: self)) ?? .sunday
+        switch weekday {
+        case .sunday:
+            return "Sunday"
+        case .monday:
+            return "Monday"
+        case .tuesday:
+            return "Tuesday"
+        case .wednesday:
+            return "Wednesday"
+        case .thursday:
+            return "Thursday"
+        case .friday:
+            return "Friday"
+        case .saturday:
+            return "Saturday"
         }
     }
     

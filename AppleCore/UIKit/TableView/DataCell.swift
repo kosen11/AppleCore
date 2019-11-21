@@ -18,7 +18,10 @@ open class DataCell: UITableViewCell, DataObject {
 
     public func setData(data: Any?) {
         _data = data
-        updateDataView()
+        
+        DispatchQueue.main.async {
+            self.updateDataView()
+        }
     }
     
     open func updateDataView() {

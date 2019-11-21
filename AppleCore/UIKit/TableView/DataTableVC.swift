@@ -18,10 +18,12 @@ open class DataTableVC: UITableViewController, DataObject {
     
     public func setData(data: Any?) {
         _data = data
-        updateData()
+        DispatchQueue.main.async {
+            self.updateDataView()
+        }
     }
     
-    open func updateData() {
+    open func updateDataView() {
         //TODO: override in child implementation
     }
 }

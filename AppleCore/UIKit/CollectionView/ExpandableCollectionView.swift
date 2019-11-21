@@ -22,6 +22,7 @@ open class ExpandableCollectionView: UICollectionView {
     private var expandedCell: ExpandableCell?
     private var hiddenCells = Array<ExpandableCell>()
 
+    @available(iOS 10.0, *)
     public func toggleCellExpand(indexPath: IndexPath, animationCompleteCallback: Callback<Bool>?) {
         let dampingRatio: CGFloat = 0.8
         let initialVelocity = CGVector.zero

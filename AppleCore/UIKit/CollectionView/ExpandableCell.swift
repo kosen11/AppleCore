@@ -41,7 +41,6 @@ open class ExpandableCell: UICollectionViewCell {
     }
     
     private func setupView() {
-        contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10
         contentView.layer.masksToBounds = true
         

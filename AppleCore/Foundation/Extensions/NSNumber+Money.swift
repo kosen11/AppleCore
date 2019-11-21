@@ -26,17 +26,13 @@ public extension NSNumber {
     }
     
     var percentageString: String {
-        get {
-            let value = NumberFormatter.percentage.string(from: self) ?? self.stringValue
-            return "\(value)%"
-        }
+        let value = NumberFormatter.percentage.string(from: self) ?? self.stringValue
+        return "\(value)%"
     }
     
     var taxString: String {
-        get {
-            let value = NumberFormatter.tax.string(from: self) ?? self.stringValue
-            return "\(value)%"
-        }
+        let value = NumberFormatter.tax.string(from: self) ?? self.stringValue
+        return "\(value)%"
     }
     
     var minorUnits: Int {
