@@ -35,7 +35,7 @@ public class LiveData<T> {
     
     private func notify() {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: _name),
-                                        object: self,
-                                        userInfo: ["value": value])
+                                        object: _value,
+                                        userInfo: nil)
     }
 }
