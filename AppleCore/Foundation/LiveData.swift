@@ -14,7 +14,7 @@ public protocol MutableData {
 
 public class LiveData<T: MutableData> {
     
-    init(_ startValue: T) {
+    public init(_ startValue: T) {
         _value = startValue
         notify()
     }
