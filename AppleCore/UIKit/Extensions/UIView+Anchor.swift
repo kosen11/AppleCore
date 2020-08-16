@@ -22,9 +22,14 @@ import UIKit
 public extension UIView {
     func anchor (top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?, paddingTop: CGFloat, paddingLeft: CGFloat, paddingBottom: CGFloat, paddingRight: CGFloat, width: CGFloat, height: CGFloat, enableInsets: Bool) {
         
-        let insets = self.safeAreaInsets
-        let topInset = insets.top
-        let bottomInset = insets.bottom
+        var topInset = CGFloat(0)
+        var bottomInset = CGFloat(0)
+        
+        if #available(iOS 11.0, *) {
+            let insets = self.safeAreaInsets
+            topInset = insets.top
+            bottomInset = insets.bottom
+        }
         
         translatesAutoresizingMaskIntoConstraints = false
         
