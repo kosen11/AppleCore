@@ -3,7 +3,6 @@
 //  AppleCore
 //
 //  Created by Ray Pietz on 7/29/19.
-//  Copyright © 2019 talech Inc.
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by

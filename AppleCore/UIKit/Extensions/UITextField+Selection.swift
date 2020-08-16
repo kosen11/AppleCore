@@ -3,7 +3,6 @@
 //  AppleCore
 //
 //  Created by Ray Pietz on 11/7/19.
-//  Copyright © 2019 talech Inc. All rights reserved.
 //
 
 import UIKit
