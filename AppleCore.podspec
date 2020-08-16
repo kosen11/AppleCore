@@ -7,4 +7,5 @@ Pod::Spec.new do |spec|
   spec.author = { "Raymond Pietz" => "raymond.pietz@gmail.com" }
   spec.source = { :git => "https://github.com/kosen11/AppleCore.git", :tag => "0.0.1" }
   spec.source_files = "AppleCore/*.{swift,h,m}", "AppleCore/**/*.{swift,h,m}"
+  spec.swift_version = "4.1"
 end

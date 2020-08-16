@@ -43,8 +43,17 @@ public extension UIAlertController {
     static func presentAlertController(alertController: UIAlertController!, animated: Bool = true) {
         print("ALERT! title: \(String(describing: alertController.title)) message: \(String(describing: alertController.message))")
         DispatchQueue.main.async {
-            UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: animated, completion: nil)
+            presentWindow()?.rootViewController?.present(alertController, animated: animated, completion: nil)
         }
+    }
+    
+    static func presentWindow() -> UIWindow? {
+        return UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows
+            .filter({$0.isKeyWindow}).first
     }
     
     func addActions(actions: [UIAlertAction]?) {
