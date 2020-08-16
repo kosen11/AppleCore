@@ -11,6 +11,8 @@
 		720432322304C2D500E201F0 /* StringDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720432312304C2D500E201F0 /* StringDataCell.swift */; };
 		720432372304CC8200E201F0 /* DataPopoverTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720432362304CC8200E201F0 /* DataPopoverTableVC.swift */; };
 		7211500C23513EE500F7E1B9 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7211500B23513EE500F7E1B9 /* String+Error.swift */; };
+		722FF6D024E98BF300B75D4A /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722FF6CF24E98BF300B75D4A /* LiveData.swift */; };
+		722FF6D224E98CD500B75D4A /* VoidFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722FF6D124E98CD500B75D4A /* VoidFunction.swift */; };
 		7231EEF1234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF0234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift */; };
 		7231EEF3234A0FAF00F77EE8 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */; };
 		7231EEF5234A125700F77EE8 /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231EEF4234A125700F77EE8 /* String+JSON.swift */; };
@@ -67,6 +69,8 @@
 		720432312304C2D500E201F0 /* StringDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataCell.swift; sourceTree = "<group>"; };
 		720432362304CC8200E201F0 /* DataPopoverTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPopoverTableVC.swift; sourceTree = "<group>"; };
 		7211500B23513EE500F7E1B9 /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
+		722FF6CF24E98BF300B75D4A /* LiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
+		722FF6D124E98CD500B75D4A /* VoidFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidFunction.swift; sourceTree = "<group>"; };
 		7231EEF0234A0B0700F77EE8 /* NSDecimalNumber+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDecimalNumber+Rounding.swift"; sourceTree = "<group>"; };
 		7231EEF2234A0FAF00F77EE8 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		7231EEF4234A125700F77EE8 /* String+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JSON.swift"; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 				724CEE1B22E8D0E100650499 /* DataObject.swift */,
 				72F0F1F623398F4F00DDC3DD /* Callback.swift */,
 				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
+				722FF6CF24E98BF300B75D4A /* LiveData.swift */,
+				722FF6D124E98CD500B75D4A /* VoidFunction.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				724CEE4022E8D0E100650499 /* DateX.swift in Sources */,
 				72F0F1EF2339718000DDC3DD /* ExpandableCell.swift in Sources */,
 				7231EEF3234A0FAF00F77EE8 /* Dictionary+Extension.swift in Sources */,
+				722FF6D024E98BF300B75D4A /* LiveData.swift in Sources */,
 				724CEE3A22E8D0E100650499 /* UIView+Shake.swift in Sources */,
 				724CEE3722E8D0E100650499 /* UIAlertActionX.swift in Sources */,
 				72ECC9CF2374BB7500051670 /* UITextField+Selection.swift in Sources */,
@@ -407,6 +414,7 @@
 				724CEE3922E8D0E100650499 /* UIDevice+VendorId.swift in Sources */,
 				72ECC9CD2374B3F500051670 /* String+Money.swift in Sources */,
 				72F0F1F723398F4F00DDC3DD /* Callback.swift in Sources */,
+				722FF6D224E98CD500B75D4A /* VoidFunction.swift in Sources */,
 				72ECC9C3237465AA00051670 /* UITextField+Secure.swift in Sources */,
 				724CEE3F22E8D0E100650499 /* Bundle+Version.swift in Sources */,
 				7231EEF5234A125700F77EE8 /* String+JSON.swift in Sources */,
