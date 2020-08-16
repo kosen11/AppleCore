@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol MutableData {
+public protocol MutableData {
     var notificationName: String { get }
 }
 
-class LiveData<T: MutableData> {
+public class LiveData<T: MutableData> {
     
     init(_ startValue: T) {
         _value = startValue
@@ -20,7 +20,7 @@ class LiveData<T: MutableData> {
     }
     
     private var _value: T
-    var value: T {
+    public var value: T {
         get { return _value }
         set {
             _value = newValue
