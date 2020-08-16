@@ -10,13 +10,12 @@ import Foundation
 
 public class LiveData<T> {
     
-    public init(_ startValue: T, name: String) {
+    public init(_ startValue: T) {
         _value = startValue
-        _name = name
         notify()
     }
     
-    private var _name: String
+    private var _notifName = UUID.init().uuidString
     private var _value: T
     public var value: T {
         get { return _value }
@@ -29,12 +28,12 @@ public class LiveData<T> {
     public func addObserver(observer: Any, selector: Selector, object: Any?) {
         NotificationCenter.default.addObserver(observer,
                                                selector: selector,
-                                               name: NSNotification.Name(rawValue: _name),
+                                               name: NSNotification.Name(rawValue: _notifName),
                                                object: object)
     }
     
     private func notify() {
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: _name),
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: _notifName),
                                         object: _value,
                                         userInfo: nil)
     }
