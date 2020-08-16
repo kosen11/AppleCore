@@ -8,17 +8,15 @@
 
 import Foundation
 
-public protocol MutableData {
-    var notificationName: String { get }
-}
-
-public class LiveData<T: MutableData> {
+public class LiveData<T> {
     
-    public init(_ startValue: T) {
+    public init(_ startValue: T, name: String) {
         _value = startValue
+        _name = name
         notify()
     }
     
+    private var _name: String
     private var _value: T
     public var value: T {
         get { return _value }
@@ -31,11 +29,13 @@ public class LiveData<T: MutableData> {
     public func addObserver(observer: Any, selector: Selector, object: Any?) {
         NotificationCenter.default.addObserver(observer,
                                                selector: selector,
-                                               name: NSNotification.Name(rawValue: _value.notificationName),
+                                               name: NSNotification.Name(rawValue: _name),
                                                object: object)
     }
     
     private func notify() {
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: _value.notificationName), object: self, userInfo: ["value": value])
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: _name),
+                                        object: self,
+                                        userInfo: ["value": value])
     }
 }
