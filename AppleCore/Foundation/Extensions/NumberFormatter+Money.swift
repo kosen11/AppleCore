@@ -36,10 +36,8 @@ public extension NumberFormatter {
         formatter.numberStyle = .currency
         formatter.locale = Locale(identifier: localeValue)
         formatter.currencyCode = currencyValue
+        formatter.numberStyle = .currency
         formatter.minimumIntegerDigits = 1
-        //TODO: support 3 fraction digits for dinars
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
         formatter.roundingMode = .halfUp
         
         if !formatter.negativeFormat.contains("0)") {
@@ -50,7 +48,7 @@ public extension NumberFormatter {
     }
     
     private static var _currency: NumberFormatter = defaultCurrencyFormatter
-    static var currency: NumberFormatter {
+    static var currencyFormatter: NumberFormatter {
         return _currency
     }
     

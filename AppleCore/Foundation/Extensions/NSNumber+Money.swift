@@ -21,7 +21,7 @@ import Foundation
 
 public extension NSNumber {
     var currencyString: String {
-        return NumberFormatter.currency.string(from: self) ?? self.stringValue
+        return NumberFormatter.currencyFormatter.string(from: self) ?? self.stringValue
     }
     
     var percentageString: String {
