@@ -69,7 +69,7 @@ public class CollectionDataProvider: NSObject, UICollectionViewDataSource {
         
         if let dataObject: DataObject = cell as? DataObject {
             let cellData = dataForIndexPath(indexPath)
-            dataObject.setData(data: cellData)
+            dataObject.setData(cellData)
         }
         
         return cell

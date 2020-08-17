@@ -54,7 +54,7 @@ open class TableDataProvider: NSObject, UITableViewDataSource {
         
         if let dataObject: DataObject = cell as? DataObject {
             let cellData = data?[indexPath.section][indexPath.row]
-            dataObject.setData(data: cellData)
+            dataObject.setData(cellData)
         }
         
         return cell

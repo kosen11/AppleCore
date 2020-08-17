@@ -20,7 +20,7 @@
 import UIKit
 
 public extension UINavigationController {
-    func transition(to: UIViewController, animated: Bool? = true) {
+    func transition(_ to: UIViewController, animated: Bool? = true) {
         if viewControllers.contains(to) {
             popToViewController(to, animated: animated!)
             return

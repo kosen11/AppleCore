@@ -223,11 +223,11 @@
 			children = (
 				724CEE1C22E8D0E100650499 /* Extensions */,
 				724CEE3022E8D0E100650499 /* BioMetric */,
-				724CEE1B22E8D0E100650499 /* DataObject.swift */,
+				722FF6D124E98CD500B75D4A /* VoidFunction.swift */,
 				72F0F1F623398F4F00DDC3DD /* Callback.swift */,
 				724CEE3322E8D0E100650499 /* ResultCallback.swift */,
+				724CEE1B22E8D0E100650499 /* DataObject.swift */,
 				722FF6CF24E98BF300B75D4A /* LiveData.swift */,
-				722FF6D124E98CD500B75D4A /* VoidFunction.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";

@@ -84,20 +84,20 @@ public extension Date {
         return Date().dayAfter
     }
     
-    static func dayBefore(date: Date) -> Date {
+    static func dayBefore(_ date: Date) -> Date {
         return Calendar.current.date(byAdding: .day, value: -1, to: date)!
     }
     
-    static func dayAfter(date: Date) -> Date {
+    static func dayAfter(_ date: Date) -> Date {
         return Calendar.current.date(byAdding: .day, value: 1, to: date)!
     }
     
     var dayBefore: Date {
-        return Date.dayBefore(date: self)
+        return Date.dayBefore(self)
     }
     
     var dayAfter: Date {
-        return Date.dayAfter(date: self)
+        return Date.dayAfter(self)
     }
     
     var midnight: Date {
@@ -134,10 +134,10 @@ public extension Date {
     }
     
     var timeElapsedShort: String {
-        return timeElapsedShort(toDate: Date())
+        return timeElapsedShort(Date())
     }
     
-    func timeElapsedShort(toDate: Date) -> String {
+    func timeElapsedShort(_ toDate: Date) -> String {
         var secondsDiff = toDate.timeIntervalSince1970 - timeIntervalSince1970
         if secondsDiff == 0 {
             return "Now"
@@ -156,10 +156,10 @@ public extension Date {
     }
     
     var timeElapsed: String {
-        return timeElapsed(toDate: Date())
+        return timeElapsed(Date())
     }
     
-    func timeElapsed(toDate: Date) -> String {
+    func timeElapsed(_ toDate: Date) -> String {
         var secondsDiff = toDate.timeIntervalSince1970 - timeIntervalSince1970
         if secondsDiff == 0 {
             return "Now"

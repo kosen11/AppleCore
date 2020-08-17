@@ -23,10 +23,10 @@ public extension NSDecimalNumber {
     static var negativeOne: NSDecimalNumber { return NSDecimalNumber(value: -1) }
     
     var roundedCurrency: NSDecimalNumber {
-        return roundToScale(scale: 2)
+        return roundToScale(2)
     }
     
-    func roundToScale(scale: Int16) -> NSDecimalNumber {
+    func roundToScale(_ scale: Int16) -> NSDecimalNumber {
         return self.rounding(accordingToBehavior: NSDecimalNumberHandler(roundingMode: .plain,
                                                                          scale: scale,
                                                                          raiseOnExactness: false,

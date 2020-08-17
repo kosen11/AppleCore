@@ -20,15 +20,15 @@
 import Foundation
 
 public extension String {
-    mutating func appendCSV(value: String) {
-        appendCSV(value: value, addSpace: false)
+    mutating func appendCSV(_ value: String) {
+        appendCSV(value, addSpace: false)
     }
     
-    mutating func appendCSSV(value: String) {
-        appendCSV(value: value, addSpace: true)
+    mutating func appendCSSV(_ value: String) {
+        appendCSV(value, addSpace: true)
     }
     
-    mutating func appendCSV(value: String, addSpace: Bool) {
+    mutating func appendCSV(_ value: String, addSpace: Bool) {
         if count > 0 {
             if addSpace {
                 append(", ")

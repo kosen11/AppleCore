@@ -8,4 +8,4 @@
 
 import Foundation
 
-public typealias VoidFunction = (() -> Void)
+public typealias VoidFunction = () -> Void

@@ -15,7 +15,7 @@ open class DataCell: UITableViewCell, DataObject {
         return _data
     }
 
-    public func setData(data: Any?) {
+    public func setData(_ data: Any?) {
         _data = data
         
         DispatchQueue.main.async {

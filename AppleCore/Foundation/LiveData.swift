@@ -25,7 +25,7 @@ public class LiveData<T> {
         }
     }
     
-    public func addObserver(observer: Any, selector: Selector, object: Any?) {
+    public func addObserver(_ observer: Any, selector: Selector, object: Any?) {
         NotificationCenter.default.addObserver(observer,
                                                selector: selector,
                                                name: NSNotification.Name(rawValue: _notifName),

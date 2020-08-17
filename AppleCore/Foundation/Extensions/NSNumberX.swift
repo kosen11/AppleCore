@@ -45,19 +45,19 @@ public extension NSNumber {
         return self.compare(0) != .orderedAscending
     }
     
-    func isGreaterThan(other: NSNumber) -> Bool {
+    func isGreaterThan(_ other: NSNumber) -> Bool {
         return self.compare(other) == .orderedDescending
     }
     
-    func isGreaterThanOrEqualTo(other: NSNumber) -> Bool {
+    func isGreaterThanOrEqualTo(_ other: NSNumber) -> Bool {
         return self.compare(other) != .orderedAscending
     }
     
-    func isLessThan(other: NSNumber) -> Bool {
+    func isLessThan(_ other: NSNumber) -> Bool {
         return self.compare(other) == .orderedAscending
     }
     
-    func isLessThanOrEqualTo(other: NSNumber) -> Bool {
+    func isLessThanOrEqualTo(_ other: NSNumber) -> Bool {
         return self.compare(other) != .orderedDescending
     }
 }

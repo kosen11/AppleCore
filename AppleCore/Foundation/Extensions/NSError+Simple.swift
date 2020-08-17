@@ -23,7 +23,7 @@ public extension NSError {
     
     private static let DEFAULT_DOMAIN = Bundle.main.bundleIdentifier ?? ""
     
-    static func simpleError(message: String) -> NSError {
+    static func simpleError(_ message: String) -> NSError {
         return NSError.simpleError(domain: DEFAULT_DOMAIN, code: -1, message: message)
     }
     
